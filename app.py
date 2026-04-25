@@ -5,38 +5,36 @@ import plotly.graph_objects as go
 import plotly.express as px
 from pathlib import Path
 
-# ── 페이지 설정 ──────────────────────────────────────────────
+
 st.set_page_config(
     page_title="🎬 영화관 좌석 추천",
     page_icon="🎬",
     layout="centered"
 )
 
-# ── 학번 / 이름 (첫 화면 필수 표시) ─────────────────────────
-STUDENT_ID = "2025404058"   # ← 본인 학번으로 변경
-STUDENT_NAME = "김민솔"   # ← 본인 이름으로 변경
+STUDENT_ID = "2025404058"   
+STUDENT_NAME = "김민솔"   
 
-# ── 사용자 DB (로그인용) ─────────────────────────────────────
+# 사용자 (로그인용)
 USERS = {
     "user123": "pass1234",
     "test":  "test0000",
 }
 
-# ── 캐싱: 퀴즈 데이터 로딩 ───────────────────────────────────
+# 캐싱: 퀴즈 데이터 로딩 
 # questions.json은 앱 실행 중 변경되지 않으므로 캐싱하여
-# 매 렌더링마다 파일을 다시 읽는 I/O 비용을 제거합니다.
+# 매 렌더링마다 파일을 다시 읽지x.
 @st.cache_data
 def load_questions():
-    # ▼ 데모 영상용: 터미널에서 이 메시지가 최초 1회만 출력되는 걸 보여주세요
     import time
     print("[캐싱 데모] load_questions() 실제 실행! 이 메시지는 최초 1회만 출력됩니다.")
     time.sleep(0.5)  # 캐싱 효과 체감용 인위적 지연 (영상 촬영 후 삭제)
-    # ▲ 데모 영상용 끝
+    
     path = Path(__file__).parent / "data" / "questions.json"
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
-# ── 세션 초기화 ──────────────────────────────────────────────
+#  세션 초기화 
 def init_session():
     defaults = {
         "logged_in": False,
@@ -51,9 +49,7 @@ def init_session():
             st.session_state[k] = v
 
 init_session()
-# ── 캐싱 시연용: 로딩 카운터 ────────────────────────────────
-# session_state로 렌더링 횟수를 세고,
-# load_questions()가 최초 1회만 실제 실행됨을 화면에서 보여줍니다.
+# 캐싱 시연용
 if "render_count" not in st.session_state:
     st.session_state.render_count = 0
 st.session_state.render_count += 1
@@ -62,7 +58,7 @@ data = load_questions()
 questions = data["questions"]
 theaters  = data["theaters"]
 
-# ── 공통 헤더 ────────────────────────────────────────────────
+#  공통 헤더 
 def show_header():
     st.markdown(
         f"<p style='color:gray;font-size:18px;margin-bottom:0'>"
@@ -72,9 +68,9 @@ def show_header():
     st.title("🎬 영화관 맞춤 좌석 추천")
     st.divider()
 
-# ════════════════════════════════════════════════════════════
+
 # 1. 로그인 페이지
-# ════════════════════════════════════════════════════════════
+
 def page_login():
     show_header()
     st.subheader("로그인")
@@ -96,9 +92,9 @@ def page_login():
 
     st.caption("테스트 계정: `user123` / `pass1234`")
 
-# ════════════════════════════════════════════════════════════
+
 # 2. 특별관 선택 페이지
-# ══════════════════════════════════════════════════════
+
 def page_theater():
     show_header()
     st.subheader(f"안녕하세요, {st.session_state.username}님! 👋")
@@ -118,9 +114,9 @@ def page_theater():
                 st.session_state.page      = "quiz"
                 st.rerun()
 
-# ════════════════════════════════════════════════════════════
-# 3. 퀴즈 페이지 (12문항 순차 진행)
-# ════════════════════════════════════════════════════════════
+
+# 3. 퀴즈 페이지 
+
 def page_quiz():
     show_header()
     total = len(questions)
@@ -154,9 +150,9 @@ def page_quiz():
             st.session_state.current_q -= 1
             st.rerun()
 
-# ════════════════════════════════════════════════════════════
+
 # 4. 결과 페이지
-# ════════════════════════════════════════════════════════════
+
 # 캐싱: 점수 계산
 # 결과 페이지에서 버튼 클릭 등으로 렌더링이 반복될 때
 # 동일한 답변 조합이면 12문항 × 4개 점수를 재계산하지 않고
@@ -330,7 +326,7 @@ def page_result():
     )
     st.write("")
 
-    # ── 탭으로 결과 구분 ─────────────────────────────────────
+    # 탭으로 결과 구분
     tab1, tab2, tab3 = st.tabs(["📊 성향 차트", "🗺️ 좌석 배치도", "📋 내 답변 요약"])
 
     with tab1:
@@ -393,9 +389,8 @@ def page_result():
             st.rerun()
 
 
-# ════════════════════════════════════════════════════════════
 # 사이드바: 설문 안내 + 캐싱 데모
-# ════════════════════════════════════════════════════════════
+
 with st.sidebar:
     st.markdown("## 🎬 이용 안내")
     st.divider()
@@ -462,9 +457,8 @@ with st.sidebar:
     if st.button("🔄 렌더링 강제 발생 (캐싱 확인용)", use_container_width=True):
         st.rerun()
 
-# ════════════════════════════════════════════════════════════
-# 라우터
-# ════════════════════════════════════════════════════════════
+
+
 if not st.session_state.logged_in:
     page_login()
 else:
