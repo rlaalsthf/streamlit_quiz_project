@@ -1,0 +1,180 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "category": "몰입감",
+      "question": "인물의 미세한 표정과 감정선이 중요한 영화를 볼 때, 선호하는 뷰는?",
+      "options": [
+        {"text": "화면 속에 완전히 빨려 들어갈 듯 시야에 꽉 차게 보는 것이 좋다.", "scores": {"front": 2, "middle": 0, "back": 0, "aisle": 0}},
+        {"text": "화면과 사운드의 밸런스가 맞는 곳에서 감독의 의도대로 보는 것이 최고다.", "scores": {"front": 0, "middle": 2, "back": 0, "aisle": 0}},
+        {"text": "약간 거리를 두고 영화 전체의 분위기와 배경을 조망하는 것이 좋다.", "scores": {"front": 0, "middle": 0, "back": 2, "aisle": 0}}
+      ]
+    },
+    {
+      "id": 2,
+      "category": "거리감",
+      "question": "영화관 스크린을 바라볼 때, 스크린 밖의 다른 요소(비상구 불빛, 벽면 등)가 시야에 들어오는 것에 대해 어떻게 생각하나요?",
+      "options": [
+        {"text": "절대 싫다. 내 시야에는 오직 스크린 화면만 가득 차야 한다.", "scores": {"front": 2, "middle": 0, "back": 0, "aisle": 0}},
+        {"text": "조금 보여도 상관없지만, 스크린이 시야의 중심을 딱 잡고 있어야 한다.", "scores": {"front": 0, "middle": 2, "back": 0, "aisle": 0}},
+        {"text": "스크린 테두리나 극장 내부 구조가 살짝 보여야 오히려 심리적으로 안정감이 든다.", "scores": {"front": 0, "middle": 0, "back": 2, "aisle": 0}}
+      ]
+    },
+    {
+      "id": 3,
+      "category": "피로도",
+      "question": "2시간 이상 상영되는 영화를 볼 때, 가장 피하고 싶은 신체적 불편함은 무엇인가요?",
+      "options": [
+        {"text": "계속 목을 꺾어 올려다보느라 생기는 뒷목의 뻐근함.", "scores": {"front": -2, "middle": 0, "back": 2, "aisle": 0}},
+        {"text": "양옆 사람들과 어깨가 닿거나 좁은 간격에서 오는 답답함.", "scores": {"front": 0, "middle": 0, "back": 0, "aisle": 2}},
+        {"text": "눈앞으로 쏟아지는 듯한 커다란 화면이 주는 안구 피로도.", "scores": {"front": 0, "middle": 0, "back": 2, "aisle": 0}}
+      ]
+    },
+    {
+      "id": 4,
+      "category": "음향",
+      "question": "극장의 사운드 시스템(특히 돌비나 IMAX 같은 특별관)에서 당신이 가장 기대하는 바는?",
+      "options": [
+        {"text": "심장을 울리는 베이스와 입체적인 서라운드를 온몸으로 강렬하게 맞고 싶다.", "scores": {"front": 1, "middle": 1, "back": 0, "aisle": 0}},
+        {"text": "소리가 한쪽으로 치우치지 않고 가장 입체적이고 균형 있게 들렸으면 좋겠다.", "scores": {"front": 0, "middle": 2, "back": 0, "aisle": 0}},
+        {"text": "소리가 너무 크면 귀가 피로하다. 조금 덜 직접적으로 들리는 곳이 낫다.", "scores": {"front": 0, "middle": 0, "back": 1, "aisle": 1}}
+      ]
+    },
+    {
+      "id": 5,
+      "category": "환경",
+      "question": "영화 관람 중 주변 환경(관객의 움직임, 화장실 등)에 대한 당신의 마인드는?",
+      "options": [
+        {"text": "영화 도중 화장실 따위는 가지 않는다. 오직 명당 한가운데서 한 치도 벗어날 수 없다.", "scores": {"front": 0, "middle": 2, "back": 0, "aisle": 0}},
+        {"text": "내 앞사람의 앉은키가 유독 높아서 시야를 가리는 상황이 제일 끔찍하다.", "scores": {"front": 1, "middle": 0, "back": 1, "aisle": 0}},
+        {"text": "영화관에선 언제든 눈치 보지 않고 탈출(화장실)할 수 있는 마음의 평화가 1순위다.", "scores": {"front": 0, "middle": 0, "back": 0, "aisle": 2}}
+      ]
+    },
+    {
+      "id": 6,
+      "category": "집중 스타일",
+      "question": "영화가 시작되고 암전되었을 때, 당신이 가장 몰입하기 좋은 상태는?",
+      "options": [
+        {"text": "시야의 끝부분까지 영상이 덮쳐오며 내가 영화 속 현장에 있는 듯한 착각을 줄 때.", "scores": {"front": 2, "middle": 0, "back": 0, "aisle": 0}},
+        {"text": "스크린의 네 모서리가 한눈에 들어와 전체적인 미장센을 완벽하게 감상할 때.", "scores": {"front": 0, "middle": 1, "back": 1, "aisle": 0}},
+        {"text": "옆 사람의 팝콘 소리나 스마트폰 불빛 등 외부 방해 요소로부터 최대한 격리되어 있을 때.", "scores": {"front": 0, "middle": 0, "back": 0, "aisle": 2}}
+      ]
+    },
+    {
+      "id": 7,
+      "category": "동행자",
+      "question": "영화관에 갈 때, 당신의 주된 관람 파트너는?",
+      "options": [
+        {"text": "혼자! 누구의 방해도 없이 온전히 스크린에만 빠져드는 게 좋다.", "scores": {"front": 1, "middle": 1, "back": 0, "aisle": 0}},
+        {"text": "연인이나 친구! 함께 몰입하면서도 영화 전체의 퀄리티를 즐기는 게 좋다.", "scores": {"front": 0, "middle": 2, "back": 0, "aisle": 0}},
+        {"text": "가족이나 아이! 이동하기 편하고 주변에 피해를 주지 않는 게 최고다.", "scores": {"front": 0, "middle": 0, "back": 1, "aisle": 1}}
+      ]
+    },
+    {
+      "id": 8,
+      "category": "시각 민감도",
+      "question": "카메라 워킹이 화려하거나 액션이 빠른 장면에서 당신은?",
+      "options": [
+        {"text": "내 눈앞에서 움직이는 듯한 꽉 찬 생동감이 좋다. 어지러움 따위는 없다.", "scores": {"front": 2, "middle": 0, "back": 0, "aisle": 0}},
+        {"text": "스크린의 양끝이 한눈에 다 들어와야 상황 파악이 잘 되고 눈이 덜 피로하다.", "scores": {"front": 0, "middle": 2, "back": 0, "aisle": 0}},
+        {"text": "화면이 너무 크면 어지럽다. 스크린이 한눈에 들어오는 것을 넘어 약간 작게 보이는 게 낫다.", "scores": {"front": 0, "middle": 0, "back": 2, "aisle": 0}}
+      ]
+    },
+    {
+      "id": 9,
+      "category": "취식 및 이동",
+      "question": "팝콘이나 음료 등 영화관 간식을 즐기는 스타일은?",
+      "options": [
+        {"text": "영화 볼 땐 영화만! 부스럭거리는 소리도 내기 싫고, 화장실도 절대 안 간다.", "scores": {"front": 0, "middle": 2, "back": 0, "aisle": 0}},
+        {"text": "적당히 즐기는 편. 하지만 중간에 화장실 때문에 일어날 일은 거의 없다.", "scores": {"front": 0, "middle": 1, "back": 1, "aisle": 0}},
+        {"text": "팝콘 러버 & 음료 필수! 부스럭거리거나 화장실 갈 때 남의 눈치 안 보이는 자리가 최고다.", "scores": {"front": 0, "middle": 0, "back": 0, "aisle": 2}}
+      ]
+    },
+    {
+      "id": 10,
+      "category": "관람 목적",
+      "question": "오늘 영화를 보는 가장 큰 이유는 무엇인가요?",
+      "options": [
+        {"text": "내가 사랑하는 배우/감독의 디테일한 표정과 연출을 1초도 놓치고 싶지 않다!", "scores": {"front": 2, "middle": 0, "back": 0, "aisle": 0}},
+        {"text": "웰메이드 영화의 탄탄한 스토리와 연출을 정석대로 감상하고 싶다.", "scores": {"front": 0, "middle": 2, "back": 0, "aisle": 0}},
+        {"text": "가볍게 기분 전환을 하거나 데이트/모임을 위해 편하게 즐기고 싶다.", "scores": {"front": 0, "middle": 0, "back": 1, "aisle": 1}}
+      ]
+    },
+    {
+      "id": 11,
+      "category": "감정 이입",
+      "question": "깜짝 놀라거나 감정이 벅차오르는 클라이맥스 장면에서 당신은?",
+      "options": [
+        {"text": "내 심장도 같이 뛰며 화면 속 인물과 완전히 하나가 되는 쾌감을 즐긴다.", "scores": {"front": 2, "middle": 0, "back": 0, "aisle": 0}},
+        {"text": "영화적 연출 감각에 감탄하며 전체적인 씬의 완성도를 감상한다.", "scores": {"front": 0, "middle": 2, "back": 0, "aisle": 0}},
+        {"text": "너무 자극적인 장면은 한 발짝 떨어져서 지켜보는 것이 심리적으로 편하다.", "scores": {"front": 0, "middle": 0, "back": 2, "aisle": 0}}
+      ]
+    },
+    {
+      "id": 12,
+      "category": "공간의 여유",
+      "question": "만약 오늘 상영관이 전 좌석 매진(만석)이라면 당신의 선택은?",
+      "options": [
+        {"text": "양옆에 사람이 꽉 차서 어깨가 닿아도, 내 시야만 완벽하다면 전혀 신경 쓰이지 않는다.", "scores": {"front": 1, "middle": 1, "back": 0, "aisle": 0}},
+        {"text": "조금 답답하겠지만, 명당을 차지하기 위해서라면 중앙석의 북적임 정도는 감수할 수 있다.", "scores": {"front": 0, "middle": 2, "back": 0, "aisle": 0}},
+        {"text": "꽉 막힌 공간은 숨이 막힌다. 차라리 시야를 조금 포기하더라도 한쪽이 트인 곳이 훨씬 낫다.", "scores": {"front": 0, "middle": 0, "back": 0, "aisle": 2}}
+      ]
+    }
+  ],
+  "theaters": {
+    "IMAX": {
+      "seat_map": {"rows": 15, "cols": 20},
+      "zones": {
+        "front": {"row_range": [1, 5], "description": "화면이 시야를 완전히 덮는 초몰입 구역"},
+        "middle": {"row_range": [6, 10], "description": "사운드·시야 균형 최적 스위트스팟"},
+        "back": {"row_range": [11, 15], "description": "전체 화면을 조망하는 여유 구역"},
+        "aisle": {"cols": [1, 2, 19, 20], "description": "언제든 자유롭게 이동 가능한 통로 구역"}
+      }
+    },
+    "4DX": {
+      "seat_map": {"rows": 12, "cols": 16},
+      "zones": {
+        "front": {"row_range": [1, 4], "description": "모션·물·바람 효과가 가장 강렬한 구역"},
+        "middle": {"row_range": [5, 8], "description": "효과와 시야의 균형이 좋은 추천 구역"},
+        "back": {"row_range": [9, 12], "description": "효과는 약하지만 멀미 없이 즐기는 구역"},
+        "aisle": {"cols": [1, 2, 15, 16], "description": "이동이 편한 통로 구역"}
+      }
+    },
+    "돌비 시네마": {
+      "seat_map": {"rows": 13, "cols": 18},
+      "zones": {
+        "front": {"row_range": [1, 4], "description": "돌비 애트모스 사운드를 온몸으로 체감하는 구역"},
+        "middle": {"row_range": [5, 9], "description": "돌비 비전+애트모스 완벽 균형 구역"},
+        "back": {"row_range": [10, 13], "description": "넓은 시야와 함께 여유롭게 감상하는 구역"},
+        "aisle": {"cols": [1, 2, 17, 18], "description": "통로 접근이 편리한 구역"}
+      }
+    },
+    "ScreenX": {
+      "seat_map": {"rows": 12, "cols": 18},
+      "zones": {
+        "front": {"row_range": [1, 4], "description": "270도 화면에 완전히 둘러싸이는 구역"},
+        "middle": {"row_range": [5, 8], "description": "측면 화면까지 자연스럽게 보이는 최적 구역"},
+        "back": {"row_range": [9, 12], "description": "전체 구도를 파악하며 감상하는 구역"},
+        "aisle": {"cols": [1, 2, 17, 18], "description": "통로 접근이 편리한 구역"}
+      }
+    },
+    "리클라이너": {
+      "seat_map": {"rows": 8, "cols": 12},
+      "zones": {
+        "front": {"row_range": [1, 2], "description": "화면이 가까워 박진감 있는 구역"},
+        "middle": {"row_range": [3, 5], "description": "리클라이너 각도와 시야가 완벽한 구역"},
+        "back": {"row_range": [6, 8], "description": "조용하고 여유로운 프리미엄 구역"},
+        "aisle": {"cols": [1, 2, 11, 12], "description": "음료·간식 이동이 편한 구역"}
+      }
+    },
+    "일반관": {
+      "seat_map": {"rows": 14, "cols": 18},
+      "zones": {
+        "front": {"row_range": [1, 4], "description": "가격 대비 몰입감을 극대화하는 구역"},
+        "middle": {"row_range": [5, 9], "description": "가장 무난하고 검증된 황금 구역"},
+        "back": {"row_range": [10, 14], "description": "여유롭고 편안하게 감상하는 구역"},
+        "aisle": {"cols": [1, 2, 17, 18], "description": "이동 자유도가 높은 통로 구역"}
+      }
+    }
+  }
+}
