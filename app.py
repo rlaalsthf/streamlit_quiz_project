@@ -28,7 +28,7 @@ USERS = {
 def load_questions():
     import time
     print("[캐싱 데모] load_questions() 실제 실행! 이 메시지는 최초 1회만 출력됩니다.")
-    time.sleep(0.5)  # 캐싱 효과 체감용 인위적 지연 (영상 촬영 후 삭제)
+    time.sleep(0.5)  
     
     path = Path(__file__).parent / "data" / "questions.json"
     with open(path, "r", encoding="utf-8") as f:
@@ -39,9 +39,9 @@ def init_session():
     defaults = {
         "logged_in": False,
         "username": "",
-        "page": "login",        # login | theater | quiz | result
+        "page": "login",        
         "theater": None,
-        "answers": {},          # {q_id: option_index}
+        "answers": {},          
         "current_q": 0,
     }
     for k, v in defaults.items():
